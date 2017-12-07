@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+
+    <head>
+        <link rel="manifest" href="js/manifest.json">
+        <link rel="javascript" href="js/script.js">
+        <link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Ramon Hoffman">
+        <meta name="apple-mobile-web-app-title" content="Ramon Hoffman">
+        <meta name="theme-color" content="#000000">
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/script.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlxy2ZU_pyDHgE3inVAQI9gzsuQfcXk_0&callback=initMap">
+    </script>
+    </head>
+    
+    <body>
+        <header data-role="header" data-position="fixed" data-theme="b">
+			<h1>Ramon Hoffman</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Portfolio</a></li>
+					<li><a href="#secondpage" class="ui-btn ui-icon-user ui-btn-icon-top ">About me</a></li>
+					<li><a href="#thirdpage" class="ui-btn ui-icon-edit ui-btn-icon-top">Work in progress</a></li>
+					<li><a href="#fourthpage" class="ui-btn ui-icon-mail ui-btn-icon-top">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- this is the first page -->
+		<section id="firstpage" data-role="page">
+			<div data-role="header" class="header">
+			</div>
+			<div class="ui-content">
+                <div class="feed">
+                    <h1>Skate Popup Store</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/46VqvAbQ9r8?ecver=1autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+                    </iframe>
+				    <p>Welkom in mijn Skate Popup Store.<br><br>
+                    Deze winkel is tijdelijk te vinden in 's-Hertogenbosch. Je kunt hier skaten maar ook gear kopen. Vind je de boards die er hangen niet mooi? Dan kun je je eigen deck en griptape designen!<br>
+                    Bekijk de winkel van binnen in bovenstaande video.</p>
+                </div>
+                
+                <div class="feed">
+                    <h1>Connect</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-YLC1tPZt0M?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				    <p>De Connect verbindt jou en je kind, zelfs als je er niet bij bent.<br><br>
+                    De Connect monitort jouw kind en geeft een waarschuwing wanneer het zich in de gevarenzone bevindt. Je kunt het hartritme en de ademhaling voelen op afstand. Zo kun je bij je kind zijn, zelfs als je niet thuis bent!</p>
+                </div>
+                
+                <div class="feed">
+                    <h1>Een gat in de weg?!</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T_dK2X3kUi8?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				    <p>
+                    We kwamen onderweg een groot, diep gat in de weg tegen.. <br>
+                    Nee dit is een experiment waarin ik met movement tracking met een 3D scene probeer samen te voegen. Dit is gedaan met Blender, 3D software.</p>
+                </div>
+			</div>
+		</section>
+
+		<!-- this is the second page -->
+		<section id="secondpage" data-role="page">
+			<div data-role="header" class="header">
+			</div>
+			<div class="ui-content" id="aboutme">
+                <p>Ik ben Ramon Hoffman, een Communication & Multimediadesign student. Ik hou mij bezig met ontwerpen. <br><br>
+                Dit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ikDit ben ik</p>
+                <img src="images/foto.png"></img>
+				
+			</div>
+		</section>
+
+        <!-- this is the third page -->
+		<section id="thirdpage" data-role="page">
+			<div data-role="header" class="header">
+			</div>
+			<div class="ui-content">
+                <div class="feed">
+                    <h1>Portfolio</h1>
+                    <img src="images/portfolio.png"></img>
+				    <p>Momenteel ben ik bezig met het maken van mijn Portfolio. Ik ben een app aan het maken waar mijn Portfolio op staat. Wanneer ik hier klaar mee ben begin ik aan de website voor desktop.</p>
+                </div>
+                
+                <div class="feed">
+                    <h1>Arduino</h1>
+				    <p>Aan het eind van blok 6 moet ik een Arduino project af hebben. Ik wil een robotje maken die zelf de weg vindt. </p>
+                </div>
+			</div>
+		</section>
+
+        <!-- this is the fourth page -->
+		<section id="fourthpage" data-role="page">
+			<div data-role="header" class="header">
+			</div>
+			<div class="ui-content">
+                    <div id="map"></div>
+                <div id="contact">
+                    <h1>Contact</h1>
+                    <ul>
+                        <a href="mailto:ramon.hoffman@hotmail.com?subject=Ik heb een vraag via uw portfolio"><li class="ui-btn ui-icon-mail ui-btn-icon-left" >
+                        ramon.hoffman@hotmail.com
+                            </li></a>
+                        <a href="tel:+31641734410"><li class="ui-btn ui-icon-phone ui-btn-icon-left" >
+                        +316 41734410
+                        </li></a>
+                        <li class="ui-btn ui-icon-location ui-btn-icon-left" >
+                        's-Hertogenbosch
+                        </li>
+                    </ul>
+                </div>
+				
+			</div>
+		</section>
+
+
+		<!-- this is a page treated as a dialog -->
+		<section id="dialogpage" data-role="page" data-dialog="true" data-close-btn="right" data-theme="b">
+			<div data-role="header">
+				<h1>Dialogs</h1>
+			</div>
+			<div class="ui-content">
+				Hi! this is a dialog!
+			</div>
+        </section>
+
+            <section class="footer" data-role="footer">
+                <div>
+                    <a href="mailto:ramon.hoffman@hotmail.com?subject=Ik heb een vraag via uw portfolio" class="ui-btn ui-icon-mail ui-btn-icon-notext"></a>
+                    <a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-notext"></a>
+                    <a href="tel:+31641734410" class="ui-btn ui-icon-phone ui-btn-icon-notext"></a>
+                </div>
+			</section>
+
+
+<!--            Transities
+                <p><a href="#firstpage" data-transition="fade">Fade back</a></p>
+				<p><a href="#firstpage" data-transition="flip">Flip back</a></p>
+				<p><a href="#firstpage" data-transition="pop">Pop back</a></p>
+				<p><a href="#firstpage" data-transition="slide">Slide back</a></p>
+				<p><a href="#firstpage" data-transition="slidedown">Slide down back</a></p>
+				<p><a href="#firstpage" data-transition="slideup" class="ui-btn">Slide up back</a></p>
+-->
+
+		
+    </body>
+</html>
